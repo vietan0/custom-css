@@ -1,0 +1,19 @@
+.markdown-body .highlight pre,
+.markdown-body pre {
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+  letter-spacing: 0.02em;
+  font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
+}
+
+.js-snippet-clipboard-copy-unpositioned
+  .markdown-body
+  .snippet-clipboard-content,
+.js-snippet-clipboard-copy-unpositioned .markdown-body .highlight {
+  border-radius: 8px;
+}
+
+.markdown-body code {
+  font-size: 80%;
+  font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
+}

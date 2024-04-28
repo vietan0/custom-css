@@ -1,0 +1,17 @@
+/* hide folder-text on bookmarks toolbar */
+/* #personal-bookmarks .bookmark-item > .toolbarbutton-text {
+  display: none !important; */
+/* } */
+
+/* change the icons (url) according to label */
+/* add this to each folders you have by changing */
+
+.bookmark-item[container='true'] [label='Docs'] {
+  list-style-image: url('./icons/material-sym-search-desktop.svg') !important;
+}
+.bookmark-item[container='true'] [label='Icons'] {
+  list-style-image: url('./icons/material-sym-icons.svg') !important;
+}
+.bookmark-item[container='true'] [label='API'] {
+  list-style-image: url('./icons/tabler-api.svg') !important;
+}
