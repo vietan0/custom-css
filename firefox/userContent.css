@@ -1,0 +1,6 @@
+@-moz-document url-prefix('chrome://devtools/content/') {
+  :root {
+    --monospace-font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
+    --theme-code-font-size: 11px !important;
+  }
+}

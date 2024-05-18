@@ -1,8 +1,8 @@
 .markdown-body .highlight pre,
 .markdown-body pre {
   font-size: 13px !important;
-  line-height: 1.6 !important;
-  letter-spacing: 0.02em;
+  line-height: 1.59 !important;
+  letter-spacing: 0.25px;
   font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
 }
 
