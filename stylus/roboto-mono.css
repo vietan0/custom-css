@@ -1,73 +1,74 @@
 @-moz-document domain("tanstack.com") {
-pre code {
-	font-size: 13px;
-	line-height: 1.59;
-	letter-spacing: 0.25px;
-	font-family: 'Roboto Mono', 'IBM Plex Mono', monospace;
-}
+  pre code {
+    font-size: 13px;
+    line-height: 1.59;
+    letter-spacing: 0.25px;
+    font-family: 'Roboto Mono', 'IBM Plex Mono', monospace;
+  }
 }
 
 @-moz-document domain("www.reddit.com") {
-code,
-kbd,
-pre,
-samp {
-	font-size: 13px;
-	line-height: 1.59;
-	letter-spacing: 0.25px;
-	font-family: 'Roboto Mono', 'IBM Plex Mono', monospace;
-}
+  code,
+  kbd,
+  pre,
+  samp {
+    font-size: 13px;
+    line-height: 1.59;
+    letter-spacing: 0.25px;
+    font-family: 'Roboto Mono', 'IBM Plex Mono', monospace;
+  }
 }
 
 @-moz-document domain("stackoverflow.com") {
-code,
-.s-prose code,
-pre.s-code-block {
-	font-size: 13px;
-	line-height: 1.59;
-	letter-spacing: 0.25px;
-	font-family: 'Roboto Mono', 'IBM Plex Mono', monospace;
-}
+  code,
+  .s-prose code,
+  pre.s-code-block {
+    font-size: 13px;
+    line-height: 1.59;
+    letter-spacing: 0.25px;
+    font-family: 'Roboto Mono', 'IBM Plex Mono', monospace;
+  }
 }
 
 @-moz-document domain("developer.mozilla.org") {
-:root {
-	--font-code: 'Roboto Mono', 'IBM Plex Mono', monospace;
-}
+  :root {
+    --font-code: 'Roboto Mono', 'IBM Plex Mono', monospace;
+  }
 
-.code-example,
-code,
-pre,
-.sidebar code {
-	font-size: 13px;
-	line-height: 1.59;
-	letter-spacing: 0.25px;
-}
+  .code-example,
+  code,
+  pre,
+  .sidebar code {
+    font-size: 13px;
+    line-height: 1.59;
+    letter-spacing: 0.25px;
+  }
 
-.sidebar code {
-	font-size: 0.75rem;
-}
+  .sidebar code {
+    font-size: 0.75rem;
+  }
 }
 
 @-moz-document domain("vitest.dev") {
-pre,
-code,
-kbd,
-samp {
-	font-family: 'Roboto Mono', 'IBM Plex Mono', monospace;
-	line-height: 1.59;
-	letter-spacing: 0.25px;
+  pre,
+  code,
+  kbd,
+  samp {
+    font-family: 'Roboto Mono', 'IBM Plex Mono', monospace;
+    line-height: 1.59;
+    letter-spacing: 0.25px;
+  }
+
+  .vp-doc [class*='language-'] code {
+    font-size: 13px;
+  }
 }
 
-.vp-doc [class*="language-"] code {
-	font-size: 13px;
-}
-}
-
-@-moz-document regexp("^\\w+-extension://.+") {
-.CodeMirror {
-	font-family: 'Roboto Mono', 'IBM Plex Mono', monospace;
-	font-size: 13px;
-	line-height: 1.5;
-}
+@-moz-document regexp("^\\w+-extension://.+")
+{
+  .CodeMirror {
+    font-family: 'Roboto Mono', 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    line-height: 1.5;
+  }
 }
