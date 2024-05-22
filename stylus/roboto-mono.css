@@ -107,3 +107,11 @@
   }
 }
 
+@-moz-document domain("interactive-examples.mdn.mozilla.net") {
+  .cm-editor .cm-scroller {
+    font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
+    font-size: 13px !important;
+    line-height: 1.59 !important;
+    letter-spacing: 0.25px;
+  }
+}
