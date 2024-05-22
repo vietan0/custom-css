@@ -72,3 +72,38 @@
     line-height: 1.5;
   }
 }
+
+@-moz-document domain("github.com") {
+  kbd,
+  code,
+  samp,
+  pre,
+  .sha-block,
+  .file-info,
+  .text-mono,
+  .blob-code-inner,
+  .react-code-text,
+  .FormControl-monospace {
+    font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
+  }
+
+  .markdown-body .highlight pre,
+  .markdown-body pre {
+    font-size: 13px !important;
+    line-height: 1.59 !important;
+    letter-spacing: 0.25px;
+  }
+
+  .js-snippet-clipboard-copy-unpositioned
+    .markdown-body
+    .snippet-clipboard-content,
+  .js-snippet-clipboard-copy-unpositioned .markdown-body .highlight {
+    border-radius: 8px;
+  }
+
+  .react-code-text {
+    font-size: 13px;
+    letter-spacing: 0.2px;
+  }
+}
+
