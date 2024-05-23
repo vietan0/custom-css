@@ -81,17 +81,24 @@
   .sha-block,
   .file-info,
   .text-mono,
+  .commit-ref,
   .blob-code-inner,
   .react-code-text,
+  .input-monospace,
   .FormControl-monospace {
     font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
+    letter-spacing: 0.25px;
   }
 
   .markdown-body .highlight pre,
   .markdown-body pre {
     font-size: 13px !important;
     line-height: 1.59 !important;
-    letter-spacing: 0.25px;
+  }
+
+  .react-code-text,
+  .blob-code-inner {
+    font-size: 13px;
   }
 
   .js-snippet-clipboard-copy-unpositioned
@@ -100,15 +107,23 @@
   .js-snippet-clipboard-copy-unpositioned .markdown-body .highlight {
     border-radius: 8px;
   }
-
-  .react-code-text {
-    font-size: 13px;
-    letter-spacing: 0.2px;
-  }
 }
 
 @-moz-document domain("interactive-examples.mdn.mozilla.net") {
   .cm-editor .cm-scroller {
+    font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
+    font-size: 13px !important;
+    line-height: 1.59 !important;
+    letter-spacing: 0.25px;
+  }
+}
+
+@-moz-document domain("nextui.org") {
+  code,
+  kbd,
+  pre,
+  samp,
+  .font-mono {
     font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
     font-size: 13px !important;
     line-height: 1.59 !important;
