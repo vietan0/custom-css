@@ -130,3 +130,41 @@
     letter-spacing: 0.25px;
   }
 }
+
+@-moz-document domain("zod.dev") {
+  code,
+  kbd,
+  pre,
+  samp,
+  .font-mono {
+    font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
+    font-size: 13px !important;
+    line-height: 1.59 !important;
+    letter-spacing: 0.25px;
+  }
+}
+
+@-moz-document domain("stackblitz.com") {
+  .view-lines {
+    font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
+  }
+}
+
+@-moz-document domain("typescriptlang.org") {
+  .view-lines {
+    font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
+    font-size: 13px !important;
+    line-height: 1.59 !important;
+    letter-spacing: 0.25px;
+  }
+}
+
+@-moz-document domain("app.todoist.com") {
+  .root,
+  code,
+  kbd,
+  pre,
+  samp {
+    --reactist-font-family-monospace: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
+  }
+}
