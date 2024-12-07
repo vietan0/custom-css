@@ -1,0 +1,12 @@
+/* illustrated: */
+/* img 1: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/theme/themes_components_annotations.png */
+/* img 2: https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fhow-do-i-change-this-light-grey-separator-at-the-bottom-of-v0-c3y6wqjjke5e1.png%3Fwidth%3D636%26format%3Dpng%26auto%3Dwebp%26s%3D1539f23c739ec91eb8f4fb8bc60a70de1a29f5a5 */
+
+#navigator-toolbox{
+  --tabs-navbar-separator-style: solid !important;
+  --tabs-navbar-separator-color: #2B2A33 !important;
+}
+
+:root {
+  --chrome-content-separator-color: var(--lwt-accent-color, var(--toolbox-non-lwt-bgcolor)) !important;
+}
