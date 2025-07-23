@@ -1,7 +1,35 @@
-@-moz-document url-prefix('chrome://devtools/content/')
-{
+@-moz-document url-prefix('chrome://devtools/content/') {
   :root {
     --monospace-font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
     --theme-code-font-size: 11px !important;
   }
+}
+
+/* Revert new tab layout (from FF 141.0) */
+/* Enlarge icons from 32px square to 64px square */
+.top-site-outer .tile .icon-wrapper,
+.shortcuts-refresh .top-site-outer .tile .icon-wrapper {
+  height: 50px !important;
+  width: 50px !important;
+}
+/* Enlarge the button so there's still a bit of white space */
+.top-site-outer .tile, 
+.shortcuts-refresh .top-site-outer .tile {
+  height: 80px !important;
+  width: 80px !important;
+}
+/* Reduce vertical spacing */
+/* .top-site-outer .top-site-button,
+.shortcuts-refresh .top-site-outer .top-site-button {
+  padding-block: 4px !important;
+} */
+/* Reduce horizontal spacing */
+.top-site-outer,
+.shortcuts-refresh .top-site-outer {
+  width: 114px !important;
+}
+/* Fade pin to 50% transparent */
+.top-site-outer .icon-pin-small,
+.shortcuts-refresh .top-site-outer .icon-pin-small {
+  opacity: 0.5 !important;
 }

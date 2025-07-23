@@ -1,0 +1,26 @@
+#the_toolbar ion-button {
+	--padding-top: 10px;
+	--padding-bottom: 10px;
+	font-weight: bold;
+	font-size: 0.9rem;
+	letter-spacing: 0;
+}
+
+.square.black {
+	fill: #739552 !important;
+}
+.square.white {
+	fill: #ebecd0 !important;
+}
+
+.cm-chessboard.chessvis-light .coordinates .coordinate.black {
+	fill: #ebecd0 !important;
+	font-size: 1rem !important;
+	font-weight: 500;
+}
+
+.cm-chessboard.chessvis-light .coordinates .coordinate.white {
+	fill: #739552 !important;
+	font-size: 1rem !important;
+	font-weight: 500;
+}
