@@ -1,0 +1,5 @@
+.tab-close-button {
+  &[pinned], #tabbrowser-tabs[closebuttons="activetab"] > #tabbrowser-arrowscrollbox > .tabbrowser-tab:hover > .tab-stack > .tab-content > &:not([selected]) {
+    display: unset !important;
+  }
+}

@@ -1,3 +1,5 @@
+@import url('./firefox-csshacks/content/multi_column_addons.css');
+
 @-moz-document url-prefix('chrome://devtools/content/') {
   :root {
     --monospace-font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
