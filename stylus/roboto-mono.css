@@ -55,7 +55,9 @@
   .blob-code-inner,
   .react-code-text,
   .input-monospace,
-  .FormControl-monospace {
+  .FormControl-monospace,
+	div[class^=ReferencedEventInner] p /* commits that reference an issue in /issue/xxxx */
+{
     font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
     letter-spacing: 0.25px;
   }
@@ -128,7 +130,7 @@
 }
 
 @-moz-document domain("app.todoist.com") {
-  .root,
+.root,
   code,
   kbd,
   pre,
@@ -136,4 +138,13 @@
     --reactist-font-family-monospace: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
 		font-family: var(--reactist-font-family-monospace);
   }
+}
+
+@-moz-document domain("nodejs.org") {
+pre, tt, code, .pre, span.type, a.type {
+    font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
+    font-size: 13px !important;
+    line-height: 1.59 !important;
+    letter-spacing: 0.25px;
+}
 }
