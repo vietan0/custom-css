@@ -1,5 +1,7 @@
+/* https://www.reddit.com/r/firefox/comments/1dfm7ob/firefox_127_close_button_missing_for_background/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button */
 .tab-close-button {
-  &[pinned], #tabbrowser-tabs[closebuttons="activetab"] > #tabbrowser-arrowscrollbox > .tabbrowser-tab:hover > .tab-stack > .tab-content > &:not([selected]) {
+  /* &[pinned],  */
+  #tabbrowser-tabs[closebuttons="activetab"] > #tabbrowser-arrowscrollbox > .tabbrowser-tab:hover > .tab-stack > .tab-content > &:not([selected]) {
     display: unset !important;
   }
 }
