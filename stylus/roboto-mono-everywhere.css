@@ -44,24 +44,12 @@
 }
 
 @-moz-document domain("github.com") {
-  kbd,
-  code,
-  samp,
-  pre,
-  .sha-block,
-  .file-info,
-  .text-mono,
-  .commit-ref,
-  .blob-code-inner,
-  .react-code-text,
-  .input-monospace,
-  .FormControl-monospace,
-	div[class^=ReferencedEventInner] p /* commits that reference an issue in /issue/xxxx */,
-	label[class^=prc-components-Label] span[class^=Fork-module__BranchName] /* original branch name in Create a new fork page */,
-	div[class*=BranchInfoBar-module] span[class*=BranchName] /* branch name in This branch is up to date with ... */
-{
+  :root {
+    --fontStack-monospace: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
+  }
+
+	div[class^=ReferencedEventInner] p /* commits that reference an issue in /issue/xxxx */ {
     font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
-    letter-spacing: 0.25px;
   }
 
   .markdown-body .highlight pre,
