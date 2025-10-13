@@ -48,7 +48,8 @@
     --fontStack-monospace: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
   }
 
-	div[class^=ReferencedEventInner] p /* commits that reference an issue in /issue/xxxx */ {
+  div[class^=ReferencedEventInner] p /* commits that reference an issue in /issue/xxxx */,
+  textarea[class^=prc-Textarea] /* Extended description textarea in PR merge box */ {
     font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
   }
 
@@ -139,28 +140,52 @@ pre, tt, code, .pre, span.type, a.type {
 }
 }
 
-@-moz-document url-prefix("https://git-scm.com/docs") {
+@-moz-document url-prefix("https://git-scm.com") {
 code,
 .synopsis > em,
-pre.content em,
-pre.content span,
+#documentation #main div.verseblock pre.content,
 .tooltip-content a,
 #documentation #main p em,
-a[href^=\/docs]
-{
+#documentation #main dt.hdlist1,
+a[href^=\/docs] {
+	font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
+	font-size: 13px !important;
+	line-height: 1.59 !important;
+	letter-spacing: 0.25px;
+}
+
+}
+
+@-moz-document url-prefix("https://www.google.com/search") {
+code {
+	font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
+	font-size: 13px;
+}
+}
+
+@-moz-document domain("supabase.com") {
+  code,
+  kbd,
+  pre,
+  samp,
+  .font-mono,
+  .input-mono input,
+  .input-mono textarea {
     font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
-	  font-size: 13px !important;
-    line-height: 1.59 !important;
-    letter-spacing: 0.25px;
-}
+  }
 
-pre.content {
-	background-color: initial !important;
-}
+  .Code .token-line {
+    font-size: 13px;
+  }
+  }
 
-@media screen and (prefers-color-scheme: dark) {
-	:root:not([data-theme="light"]) {
-		--orange: #fb7f2c;
-	}	
-}
+  @-moz-document domain("react.dev") {
+  .sandpack {
+    --sp-font-mono: 'Roboto Mono', 'IBM Plex Mono', monospace;
+  }
+
+  code, kbd, pre, samp, 
+  .sandpack .sp-code-editor .sp-pre-placeholder {
+    font-family: 'Roboto Mono', 'IBM Plex Mono', monospace;
+  }
 }
