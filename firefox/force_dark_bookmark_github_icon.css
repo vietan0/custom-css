@@ -1,0 +1,4 @@
+.toolbarbutton-icon[src^="page-icon:https://github.com"] {
+  filter: invert();
+  /* background-image: url("https://github.githubassets.com/favicons/favicon-dark.svg") */ /* doesn't work */
+}

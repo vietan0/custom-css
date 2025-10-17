@@ -1,6 +1,7 @@
 @import url('./firefox-csshacks/chrome/autohide_bookmarks_and_main_toolbars.css');
 @import url('./hide_toolbar_top_separator.css');
 @import url('./unhide_close_button_on_background_tabs.css');
+@import url('./force_dark_bookmark_github_icon.css');
 
 #navigator-toolbox{
   --uc-autohide-toolbar-delay: 200ms; /* The toolbar is hidden after 0.2s */
