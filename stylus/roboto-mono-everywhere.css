@@ -64,7 +64,9 @@
     font-size: 13px;
   }
 
-  .js-snippet-clipboard-copy-unpositioned .markdown-body .snippet-clipboard-content,
+  .js-snippet-clipboard-copy-unpositioned
+    .markdown-body
+    .snippet-clipboard-content,
   .js-snippet-clipboard-copy-unpositioned .markdown-body .highlight {
     border-radius: 8px;
   }
@@ -121,46 +123,52 @@
 }
 
 @-moz-document domain("app.todoist.com") {
-.root,
+  .root,
   code,
   kbd,
   pre,
   samp {
     --reactist-font-family-monospace: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
-		font-family: var(--reactist-font-family-monospace);
+    font-family: var(--reactist-font-family-monospace);
   }
 }
 
 @-moz-document domain("nodejs.org") {
-pre, tt, code, .pre, span.type, a.type {
+  pre,
+  tt,
+  code,
+  .pre,
+  span.type,
+  a.type {
     font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
     font-size: 13px !important;
     line-height: 1.59 !important;
     letter-spacing: 0.25px;
-}
-}
-
-@-moz-document url-prefix("https://git-scm.com") {
-code,
-.synopsis > em,
-#documentation #main div.verseblock pre.content,
-.tooltip-content a,
-#documentation #main p em,
-#documentation #main dt.hdlist1,
-a[href^=\/docs] {
-	font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
-	font-size: 13px !important;
-	line-height: 1.59 !important;
-	letter-spacing: 0.25px;
+  }
 }
 
+@-moz-document url-prefix("https://git-scm.com")
+{
+  code,
+  .synopsis > em,
+  #documentation #main div.verseblock pre.content,
+  .tooltip-content a,
+  #documentation #main p em,
+  #documentation #main dt.hdlist1,
+  a[href^='\/docs'] {
+    font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
+    font-size: 13px !important;
+    line-height: 1.59 !important;
+    letter-spacing: 0.25px;
+  }
 }
 
-@-moz-document url-prefix("https://www.google.com/search") {
-code {
-	font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
-	font-size: 13px;
-}
+@-moz-document url-prefix("https://www.google.com/search")
+{
+  code {
+    font-family: 'Roboto Mono', 'IBM Plex Mono', monospace !important;
+    font-size: 13px;
+  }
 }
 
 @-moz-document domain("supabase.com") {
@@ -177,15 +185,30 @@ code {
   .Code .token-line {
     font-size: 13px;
   }
-  }
+}
 
-  @-moz-document domain("react.dev") {
+@-moz-document domain("react.dev") {
   .sandpack {
     --sp-font-mono: 'Roboto Mono', 'IBM Plex Mono', monospace;
   }
 
-  code, kbd, pre, samp, 
+  code,
+  kbd,
+  pre,
+  samp,
   .sandpack .sp-code-editor .sp-pre-placeholder {
     font-family: 'Roboto Mono', 'IBM Plex Mono', monospace;
+  }
+}
+
+@-moz-document domain("nextjs.org") {
+  :root {
+    --font-mono: 'Roboto Mono', 'IBM Plex Mono', monospace;
+  }
+}
+
+@-moz-document domain("console.prisma.io") {
+  .ps {
+    --font-mono: 'Roboto Mono', 'IBM Plex Mono', monospace;
   }
 }
