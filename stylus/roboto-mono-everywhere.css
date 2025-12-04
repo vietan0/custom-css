@@ -207,8 +207,76 @@
   }
 }
 
+@-moz-document domain("vercel.com") {
+  :root {
+    --font-mono: 'Roboto Mono', 'IBM Plex Mono', monospace;
+  }
+}
+
 @-moz-document domain("console.prisma.io") {
   .ps {
     --font-mono: 'Roboto Mono', 'IBM Plex Mono', monospace;
+  }
+}
+
+@-moz-document domain("biomejs.dev") {
+  @layer starlight.base {
+    :root, ::backdrop {
+      --__sl-font-mono: 'Roboto Mono', 'IBM Plex Mono', monospace;
+      --sl-font-system-mono: 'Roboto Mono', 'IBM Plex Mono', monospace;
+    }
+  }
+}
+
+@-moz-document domain("claude.ai") {
+  :root {
+    --font-mono: 'Roboto Mono', 'IBM Plex Mono', monospace;
+  }
+
+  pre.code-block__code {
+    font-weight: 400;
+  }
+}
+
+@-moz-document domain("daisyui.com") {
+  :root {
+    --font-mono: 'Roboto Mono', 'IBM Plex Mono', monospace;
+  }
+
+  @layer utilities {
+    @media (min-width: 48rem) {
+      .md\:prose-base :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)), .md\:prose-base :where(h2 code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+        font-size: 1.1em;
+        line-height: 1.5em;
+      }
+    }
+  }
+}
+
+@-moz-document domain("vuejs.org") {
+  :root {
+    --vt-font-family-mono: 'Roboto Mono', 'IBM Plex Mono', monospace;
+  }
+
+  .CodeMirror pre {
+    font-family: var(--vt-font-family-mono);
+  }
+
+  .vue-repl {
+    --font-code: 'Roboto Mono', 'IBM Plex Mono', monospace;
+  }
+}
+
+@-moz-document domain("nuxt.com") {
+  @layer theme {
+    :host, :root {
+      --font-mono: 'Roboto Mono', 'IBM Plex Mono', monospace;
+    }
+  }
+}
+
+@-moz-document domain("github.bigdatatech.vn") {
+  :root {
+    --fonts-monospace: 'Roboto Mono', 'IBM Plex Mono', monospace;
   }
 }
