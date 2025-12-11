@@ -3,6 +3,10 @@
 @import url('./unhide_close_button_on_background_tabs.css');
 @import url('./force_dark_bookmark_github_icon.css');
 
-#navigator-toolbox{
+:root {
+  min-width: 1rem !important; /* minimum width of any window */
+}
+
+#navigator-toolbox {
   --uc-autohide-toolbar-delay: 200ms; /* The toolbar is hidden after 0.2s */
 }
