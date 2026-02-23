@@ -29,7 +29,7 @@
     letter-spacing: 0.25px;
   }
 
-  .vp-doc [class*='language-'] code {
+  .vp-doc[class*='language-'] code {
     font-size: 13px;
   }
 }
@@ -245,7 +245,12 @@
 
   @layer utilities {
     @media (min-width: 48rem) {
-      .md\:prose-base :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)), .md\:prose-base :where(h2 code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+      .md\:prose-base
+        :where(code):not(:where([class~='not-prose'], [class~='not-prose'] *)),
+      .md\:prose-base
+        :where(h2 code):not(
+          :where([class~='not-prose'], [class~='not-prose'] *)
+        ) {
         font-size: 1.1em;
         line-height: 1.5em;
       }
@@ -269,14 +274,54 @@
 
 @-moz-document domain("nuxt.com") {
   @layer theme {
-    :host, :root {
+    :host,
+    :root {
       --font-mono: 'Roboto Mono', 'IBM Plex Mono', monospace;
     }
   }
 }
 
-@-moz-document domain("github.bigdatatech.vn") {
+@-moz-document domain("git.bigdatatech.vn") {
   :root {
     --fonts-monospace: 'Roboto Mono', 'IBM Plex Mono', monospace;
+  }
+}
+
+@-moz-document domain("mui.com") {
+  @layer mui {
+    [class^='css'] {
+      code,
+      .class-name,
+      .class-key,
+      .MuiApi-table-item-title,
+      .MuiApi-table-item-type,
+      .MuiApi-table-item-default {
+        font-family: 'Roboto Mono', 'IBM Plex Mono', monospace;
+      }
+    }
+  }
+}
+
+@-moz-document domain("ohmyposh.dev") {
+  code,
+  code[class*='language-'],
+  pre[class*='language-'] {
+    font-family: 'Roboto Mono', 'IBM Plex Mono', monospace;
+    font-size: 13px;
+  }
+}
+
+@-moz-document url-prefix("http://localhost:51212")
+{
+  .ps,
+  .ps :host {
+    --font-mono: 'Roboto Mono', 'IBM Plex Mono', monospace;
+  }
+}
+
+@-moz-document domain("www.prisma.io") {
+  :root,
+  :host {
+    --font-mono: 'Roboto Mono', 'IBM Plex Mono';
   }
 }
