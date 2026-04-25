@@ -325,3 +325,20 @@
     --font-mono: 'Roboto Mono', 'IBM Plex Mono';
   }
 }
+
+@-moz-document domain("youtrack.cloud") {
+  :root {
+    --ring-font-family-monospace: 'Roboto Mono', 'IBM Plex Mono';
+  }
+}
+
+@-moz-document domain("code.visualstudio.com") {
+  code,
+  kbd,
+  pre,
+  samp,
+  code * {
+    font-family: 'Roboto Mono', 'IBM Plex Mono' !important;
+    font-size: 14px;
+  }
+}
