@@ -233,6 +233,12 @@
     --font-mono: 'Roboto Mono', 'IBM Plex Mono', monospace;
   }
 
+  @layer base {
+    code, kbd, samp, pre {
+      font-family: var(--font-mono);
+    }
+  }
+
   pre.code-block__code {
     font-weight: 400;
   }
@@ -295,7 +301,8 @@
       .class-key,
       .MuiApi-table-item-title,
       .MuiApi-table-item-type,
-      .MuiApi-table-item-default {
+      .MuiApi-table-item-default,
+      .global-class-value {
         font-family: 'Roboto Mono', 'IBM Plex Mono', monospace;
       }
     }
@@ -340,5 +347,11 @@
   code * {
     font-family: 'Roboto Mono', 'IBM Plex Mono' !important;
     font-size: 14px;
+  }
+}
+
+@-moz-document domain("basketball-reference.com") {
+  .stats_table {
+    font-family: 'Roboto Mono', 'IBM Plex Mono';
   }
 }
