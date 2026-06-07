@@ -1,26 +1,26 @@
 .bookmark-item:has(.toolbarbutton-icon[src*="github.com"]) {
-  background: url("https://github.githubassets.com/favicons/favicon-dark.png") no-repeat center / 16px 16px;
+  background: url("https://github.githubassets.com/favicons/favicon-dark.png") no-repeat 4px center / 16px 16px;
 }
 .toolbarbutton-icon[src*="github.com"] {
   visibility: hidden;
 }
 
 .bookmark-item:has(.toolbarbutton-icon[src*="app.todoist.com"]) {
-  background: url("https://app.todoist.com/favicon_16.png") no-repeat center / 16px 16px;
+  background: url("https://app.todoist.com/favicon_16.png") no-repeat 4px center / 16px 16px;
 }
 .toolbarbutton-icon[src*="app.todoist.com"] {
   visibility: hidden;
 }
 
 .bookmark-item:has(.toolbarbutton-icon[src*="icones.js.org"]) {
-  background: url("https://icones.js.org/favicon.svg") no-repeat center / 16px 16px;
+  background: url("https://icones.js.org/favicon.svg") no-repeat 4px center / 16px 16px;
 }
 .toolbarbutton-icon[src*="icones.js.org"] {
   visibility: hidden;
 }
-  
+
 .bookmark-item:has(.toolbarbutton-icon[src*="google.com/maps"]) {
-  background: url("https://www.google.com/images/branding/product/ico/web_maps_icon_32dp.ico") no-repeat center / 16px 16px;
+  background: url("https://www.google.com/images/branding/product/ico/web_maps_icon_32dp.ico") no-repeat 4px center / 16px 16px;
 }
 .toolbarbutton-icon[src*="google.com/maps"] {
   visibility: hidden;
